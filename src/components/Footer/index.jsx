@@ -5,7 +5,7 @@ import Image from "next/image";
 import Rounded from "../RoundedButton";
 import { useRef } from "react";
 import { useScroll, motion, useTransform } from "framer-motion";
-import Magnetic from "../magnetic";
+import Magnetic from "../Magnetic";
 import Link from "next/link";
 
 export default function Footer() {

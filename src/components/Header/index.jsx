@@ -6,7 +6,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import Nav from "./Nav";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import Magnetic from "../magnetic";
+import Magnetic from "../Magnetic";
 
 const Header = () => {
   const [isActive, setIsActive] = useState(false);

@@ -4,7 +4,7 @@ import ProjectCard from "./ProjectCard";
 import Rounded from "../RoundedButton";
 import { ProjectsData } from "../../app/data/projects";
 import Link from "next/link";
-import Magnetic from "../magnetic";
+import Magnetic from "../Magnetic";
 
 const Projects = () => {
   const ProjectsList = ProjectsData.slice(0, 4);

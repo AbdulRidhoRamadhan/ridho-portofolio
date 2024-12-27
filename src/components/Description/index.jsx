@@ -7,7 +7,7 @@ import Rounded from "../RoundedButton";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Link from "next/link";
-import Magnetic from "../magnetic";
+import Magnetic from "../Magnetic";
 
 export default function Description() {
   const slideUp = {

@@ -11,7 +11,7 @@ import { certificatesData } from "../data/certificates";
 import EndPage from "../../components/EndPage";
 import PageTransition from "../../components/PageTransition";
 import RoundedButton from "../../components/RoundedButton";
-import Magnetic from "../../components/magnetic";
+import Magnetic from "../../components/Magnetic";
 
 const AboutPage = () => {
   return (

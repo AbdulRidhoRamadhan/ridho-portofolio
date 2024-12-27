@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react";
 import styles from "./style.module.scss";
 import gsap from "gsap";
-import Magnetic from "../magnetic";
+import Magnetic from "../Magnetic";
 
 export default function RoundedButton({
   children,

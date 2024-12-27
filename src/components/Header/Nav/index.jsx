@@ -2,7 +2,7 @@ import styles from "./styles.module.scss";
 import { motion } from "framer-motion";
 import { Links, FooterLinks } from "../../../app/data/link";
 import Link from "next/link";
-import Magnetic from "../../magnetic";
+import Magnetic from "../../Magnetic";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 
