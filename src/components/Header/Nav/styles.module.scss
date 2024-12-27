@@ -1,0 +1,133 @@
+$white: #f0f0f0;
+$black: #3d3b3c;
+$blue: #0065a9;
+
+.nav {
+  height: 100%;
+  padding: 100px 40px 50px 40px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: var(--font-plus-jakarta-sans);
+  .body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: fit-content;
+
+    .el {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      z-index: 1;
+      padding: 15px;
+      cursor: pointer;
+      width: fit-content;
+
+      &:hover {
+        .indicator {
+          transform: scale(1) translateY(-50%);
+          background-color: $white;
+        }
+      }
+
+      &.active {
+        .indicator {
+          transform: scale(1) translateY(-50%);
+          background-color: $white;
+        }
+      }
+
+      .indicator {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        left: 0;
+        top: 50%;
+        background-color: grey;
+        border-radius: 50%;
+        transform: scale(0) translateY(-50%);
+        transition: all 0.2s cubic-bezier(0.76, 0, 0.24, 1);
+      }
+
+      .linkContainer {
+        perspective: 120px;
+        perspective-origin: bottom;
+        width: fit-content;
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+        font-size: 46px;
+        margin-left: 15px;
+        white-space: nowrap;
+      }
+    }
+  }
+
+  .socials {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+
+    h3 {
+      color: white;
+      cursor: default;
+      font-weight: 300;
+      font-size: 10px;
+      text-transform: uppercase;
+    }
+
+    .footer {
+      display: flex;
+      gap: 15px;
+
+      a {
+        text-decoration: none;
+        color: $white;
+        position: relative;
+        padding: 2.5px;
+
+        &::after {
+          content: "";
+          width: 0%;
+          height: 1px;
+          background-color: $white;
+          display: block;
+          margin-top: 2px;
+          position: relative;
+          left: 50%;
+          transform: translateX(-50%);
+          transition: width 0.2s linear;
+        }
+
+        &:hover::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.curve {
+  width: 100vw;
+  height: 100vw;
+  background-color: $blue;
+}
+
+@media all and (max-width: 480px) {
+  .nav {
+    padding: 70px 30px 50px 30px;
+    .body {
+      .linkContainer {
+        width: fit-content;
+      }
+
+      a {
+        font-size: 32px;
+      }
+    }
+  }
+}

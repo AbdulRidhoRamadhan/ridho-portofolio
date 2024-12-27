@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  cursor: wait;
+}
+
+main {
+  flex: 1;
+  position: relative;
+  z-index: 1;
+}
