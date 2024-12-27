@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Loader from "./loader";
+import Loader from "./Loader";
 import { AnimatePresence } from "framer-motion";
 import { usePathname } from "next/navigation";
 

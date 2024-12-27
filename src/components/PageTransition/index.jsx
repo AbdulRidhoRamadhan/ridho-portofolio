@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import { AnimatePresence } from "framer-motion";
-import Loader from "../loader";
+import Loader from "../Loader";
 
 export default function PageTransition({ children, pageName }) {
   const [isLoading, setIsLoading] = useState(true);
