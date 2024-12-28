@@ -3,7 +3,7 @@ import styles from "./styles.module.scss";
 import { useState } from "react";
 import Project from "./Card";
 import Modal from "./Card/Modal";
-import { ProjectsData } from "../data/projects";
+import { ProjectsData } from "../../data/projects";
 import EndPage from "../../components/EndPage";
 import { motion } from "framer-motion";
 import PageTransition from "../../components/PageTransition";

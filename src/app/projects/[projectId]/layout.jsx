@@ -1,4 +1,4 @@
-import { ProjectsData } from "../../data/projects";
+import { ProjectsData } from "../../../data/projects";
 
 export async function generateStaticParams() {
   const projectIds = ProjectsData.map((project) => ({

@@ -34,7 +34,7 @@ const ResumePage = () => {
     },
   };
 
-  const pdfUrl = "/files/ResumeRidho.pdf";
+  const pdfUrl = "/files/cv.pdf";
 
   return (
     <PageTransition pageName="Resume">

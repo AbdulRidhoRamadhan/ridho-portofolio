@@ -1,7 +1,7 @@
 "use client";
 
 import PageTransition from "../../../components/PageTransition";
-import { ProjectsData } from "../../data/projects";
+import { ProjectsData } from "../../../data/projects";
 import StudyCaseHeader from "./StudyCaseHeader";
 import ImagePreview from "./ImagePreview";
 import styles from "./styles.module.scss";

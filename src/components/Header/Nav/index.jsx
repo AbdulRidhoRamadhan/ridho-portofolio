@@ -1,6 +1,6 @@
 import styles from "./styles.module.scss";
 import { motion } from "framer-motion";
-import { Links, FooterLinks } from "../../../app/data/link";
+import { Links, FooterLinks } from "../../../data/link";
 import Link from "next/link";
 import Magnetic from "../../Magnetic";
 import { usePathname } from "next/navigation";

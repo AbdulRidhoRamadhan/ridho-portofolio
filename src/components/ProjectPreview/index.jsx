@@ -2,7 +2,7 @@ import React from "react";
 import style from "./style.module.scss";
 import ProjectCard from "./ProjectCard";
 import Rounded from "../RoundedButton";
-import { ProjectsData } from "../../app/data/projects";
+import { ProjectsData } from "../../data/projects";
 import Link from "next/link";
 import Magnetic from "../Magnetic";
 
