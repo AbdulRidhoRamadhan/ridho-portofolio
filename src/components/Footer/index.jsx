@@ -23,7 +23,7 @@ export default function Footer() {
         <div className={styles.title}>
           <span>
             <div className={styles.imageContainer}>
-              <Image fill={true} alt={"image"} src={`/images/Ridho.jpg`} />
+              <Image fill={true} alt={"image"} src={`/images/Ridho.png`} />
             </div>
             <h2>Let's work</h2>
           </span>

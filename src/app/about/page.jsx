@@ -32,7 +32,7 @@ const AboutPage = () => {
             transition={{ duration: 0.8 }}
           >
             <Image
-              src="/images/Ridho.jpg"
+              src="/images/Ridho.png"
               width={300}
               height={450}
               alt="Image"

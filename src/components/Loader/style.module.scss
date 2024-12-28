@@ -6,8 +6,16 @@
   align-items: center;
   justify-content: center;
   position: fixed;
-  z-index: 99;
+  top: 0;
+  left: 0;
+  z-index: 9999;
   background-color: #141516;
+  pointer-events: none;
+
+  & ~ * {
+    visibility: hidden;
+  }
+
   svg {
     position: absolute;
     top: 0;

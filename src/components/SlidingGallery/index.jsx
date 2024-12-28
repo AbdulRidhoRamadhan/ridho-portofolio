@@ -8,19 +8,19 @@ import Image from "next/image";
 const slider1 = [
   {
     color: "#e3e5e7",
-    src: "../images/BrandBrain.png",
+    src: "BrandBrain.png",
   },
   {
     color: "#d6d7dc",
-    src: "../images/Defeateds.png",
+    src: "Defeateds.png",
   },
   {
     color: "#e3e3e3",
-    src: "../images/GoodGames.png",
+    src: "GoodGames.png",
   },
   {
     color: "#21242b",
-    src: "../images/Karsaku.png",
+    src: "Karsaku.png",
   },
 ];
 
