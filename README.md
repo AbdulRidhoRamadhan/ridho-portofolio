@@ -6,6 +6,7 @@ Welcome to my personal portfolio website! This platform is a reflection of my pr
 
 - [Next.js](https://nextjs.org/)
 - [React](https://reactjs.org/)
+- [Sass](https://sass-lang.com/)
 - [GSAP](https://greensock.com/gsap/)
 - [Framer Motion](https://www.framer.com/motion/)
 - [Vercel](https://vercel.com/)
