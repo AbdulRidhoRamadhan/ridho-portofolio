@@ -147,8 +147,6 @@ $blue: #0065a9;
 
 @media all and (max-width: 480px) {
   .menuContainer {
-    right: 30px;
-    top: 30px;
     .menu {
       width: 90vw;
       height: 90vh;
@@ -159,8 +157,6 @@ $blue: #0065a9;
 @media all and (max-width: 768px) {
   .header {
     width: calc(100% - 60px);
-    left: 30px;
-    top: 30px;
 
     .nav {
       display: none;
@@ -171,7 +167,7 @@ $blue: #0065a9;
 
       .name {
         p {
-          font-size: 18px;
+          font-size: 16px;
 
           &:nth-of-type(3) {
             left: 140px;
@@ -180,9 +176,27 @@ $blue: #0065a9;
       }
 
       .copyright {
-        font-size: 18px;
-        width: 18px;
-        height: 18px;
+        font-size: 16px;
+        width: 16px;
+        height: 16px;
+      }
+
+      &:hover {
+        .copyright {
+          transform: rotate(360deg);
+        }
+        .name {
+          padding-right: 30px;
+          .codeBy {
+            transform: translateX(-100%);
+          }
+          .firstName {
+            transform: translateX(-84px);
+          }
+          .lastName {
+            transform: translateX(-96px);
+          }
+        }
       }
     }
   }
