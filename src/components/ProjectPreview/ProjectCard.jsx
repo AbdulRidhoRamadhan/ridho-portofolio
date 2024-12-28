@@ -2,7 +2,7 @@
 import { useRouter } from "next/navigation";
 import { useRef } from "react";
 import style from "./style.module.scss";
-import arrow from "../../assets/images/arrow.svg";
+import arrow from "../../assets/images/Arrow.svg";
 import Image from "next/image";
 import { useInView } from "framer-motion";
 import { motion } from "framer-motion";
