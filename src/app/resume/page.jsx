@@ -34,6 +34,8 @@ const ResumePage = () => {
     },
   };
 
+  const pdfUrl = "/files/ResumeRidho.pdf";
+
   return (
     <PageTransition pageName="Resume">
       <motion.div
@@ -45,18 +47,10 @@ const ResumePage = () => {
         <motion.div variants={itemVariants} className={styles.header}>
           <h1>📄 My Resume</h1>
           <div className={styles.actions}>
-            <a
-              href="/files/ResumeRidho.pdf"
-              target="_blank"
-              className={styles.actionButton}
-            >
+            <a href={pdfUrl} target="_blank" className={styles.actionButton}>
               <FaLink />
             </a>
-            <a
-              href="/files/ResumeRidho.pdf"
-              download
-              className={styles.actionButton}
-            >
+            <a href={pdfUrl} download className={styles.actionButton}>
               <IoMdDownload />
               Download Resume
             </a>
@@ -65,7 +59,7 @@ const ResumePage = () => {
 
         <motion.div variants={itemVariants} className={styles.resumeContainer}>
           <iframe
-            src="/files/ResumeRidho.pdf#toolbar=0&view=FitH"
+            src={`${pdfUrl}#toolbar=0&view=FitH`}
             title="Resume Preview"
             className={styles.resumePreview}
           />
