@@ -12,7 +12,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${plusJakartaSans.variable}`}>
+      <body
+        className={`${plusJakartaSans.variable}`}
+        style={{ overflowX: "hidden", width: "100%" }}
+      >
         <WelcomeLoader />
         <Header />
         <main>{children}</main>

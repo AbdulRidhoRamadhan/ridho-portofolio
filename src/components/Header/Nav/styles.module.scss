@@ -10,6 +10,7 @@ $blue: #0065a9;
   flex-direction: column;
   justify-content: space-between;
   font-family: var(--font-plus-jakarta-sans);
+
   .body {
     display: flex;
     flex-direction: column;
@@ -83,6 +84,7 @@ $blue: #0065a9;
     .footer {
       display: flex;
       gap: 15px;
+      flex-wrap: wrap;
 
       a {
         text-decoration: none;
@@ -111,23 +113,101 @@ $blue: #0065a9;
   }
 }
 
+@media (max-width: 768px) {
+  .nav {
+    padding: 80px 30px 40px 30px;
+
+    .body {
+      .el {
+        padding: 12px;
+
+        a {
+          font-size: 36px;
+          margin-left: 12px;
+        }
+
+        .indicator {
+          width: 8px;
+          height: 8px;
+        }
+      }
+    }
+
+    .socials {
+      padding: 25px;
+
+      .footer {
+        gap: 12px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .nav {
+    padding: 70px 20px 30px 20px;
+
+    .body {
+      gap: 8px;
+
+      .el {
+        padding: 10px;
+
+        a {
+          font-size: 28px;
+          margin-left: 10px;
+        }
+
+        .indicator {
+          width: 6px;
+          height: 6px;
+        }
+      }
+    }
+
+    .socials {
+      padding: 20px;
+
+      h3 {
+        font-size: 9px;
+      }
+
+      .footer {
+        gap: 10px;
+
+        a {
+          font-size: 14px;
+          padding: 2px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .nav {
+    padding: 60px 15px 25px 15px;
+
+    .body {
+      .el {
+        a {
+          font-size: 24px;
+        }
+      }
+    }
+
+    .socials {
+      .footer {
+        a {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
 .curve {
   width: 100vw;
   height: 100vw;
   background-color: $blue;
-}
-
-@media all and (max-width: 480px) {
-  .nav {
-    padding: 70px 30px 50px 30px;
-    .body {
-      .linkContainer {
-        width: fit-content;
-      }
-
-      a {
-        font-size: 32px;
-      }
-    }
-  }
 }

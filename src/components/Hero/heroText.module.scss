@@ -32,7 +32,6 @@ $page-padding: 0 100px;
   }
 }
 
-// Large devices (desktops, less than 1200px)
 @media (max-width: 1200px) {
   .slider {
     p {
@@ -43,10 +42,9 @@ $page-padding: 0 100px;
   }
 }
 
-// Medium devices (tablets, less than 992px)
 @media (max-width: 992px) {
   .sliderContainer {
-    top: calc(100% - 150px);
+    top: calc(100% - 160px);
   }
 
   .slider {
@@ -58,10 +56,9 @@ $page-padding: 0 100px;
   }
 }
 
-// Small devices (landscape phones, less than 768px)
 @media (max-width: 768px) {
   .sliderContainer {
-    top: calc(100% - 120px);
+    top: calc(100% - 140px);
   }
 
   .slider {
@@ -73,10 +70,9 @@ $page-padding: 0 100px;
   }
 }
 
-// Extra small devices (phones, less than 576px)
 @media (max-width: 576px) {
   .sliderContainer {
-    top: calc(100% - 100px);
+    top: calc(100% - 120px);
   }
 
   .slider {
@@ -88,10 +84,9 @@ $page-padding: 0 100px;
   }
 }
 
-// Very small devices
 @media (max-width: 380px) {
   .sliderContainer {
-    top: calc(100% - 80px);
+    top: calc(100% - 100px);
   }
 
   .slider {
