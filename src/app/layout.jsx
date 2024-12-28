@@ -5,14 +5,14 @@ import Footer from "../components/Footer";
 import WelcomeLoader from "../components/WelcomeLoader";
 
 export const metadata = {
-  title: "Ridho Portfolio",
-  description: "Explore my projects and skills in web development.",
+  title: "A Ridho Ramadhan • Software Developer",
+  description: "Explore my projects, skills, and experience in web development, focusing on modern technologies like React, Next.js, GSAP, and Sass.",
   keywords: "web development, portfolio, React, Next.js, GSAP, Sass",
   openGraph: {
     title: "Ridho Portfolio",
-    description: "Explore my projects and skills in web development.",
+    description: "Explore my projects, skills, and experience in web development, focusing on modern technologies like React, Next.js, GSAP, and Sass.",
     url: "https://ridho-portofolio.vercel.app/",
-    image: "/images/portfolio-thumbnail.png",
+    image: "/public/images/portfolio-thumbnail.png",
   },
   category: "technology",
 };
