@@ -8,6 +8,8 @@ export async function generateStaticParams() {
   return projectIds;
 }
 
+export { generateMetadata } from "./metadata";
+
 export default function Layout({ children }) {
   return children;
 }
