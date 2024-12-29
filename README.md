@@ -29,7 +29,7 @@ The design and aesthetic of this portfolio were heavily inspired by the incredib
 
 ## Live Deployment
 
-You can view the live version of this portfolio at [https://ridho-portofolio.vercel.app/](https://ridho-portofolio.vercel.app/).
+You can view the live version of this portfolio at [https://ridho-portofolio.vercel.app/](https://abdulridhoramadhan.my.id/).
 
 Thank you for taking the time to visit. I hope you enjoy browsing my work as much as I enjoyed building this project!
 
