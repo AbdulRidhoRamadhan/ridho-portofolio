@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import styles from "./styles.module.scss";
 import Image from "next/image";
 import Link from "next/link";
@@ -14,6 +14,12 @@ import RoundedButton from "../../components/RoundedButton";
 import Magnetic from "../../components/Magnetic";
 
 const AboutPage = () => {
+  const [showAllCertificates, setShowAllCertificates] = useState(false);
+
+  const certificatesToShow = showAllCertificates
+    ? certificatesData
+    : certificatesData.slice(0, 8);
+
   return (
     <PageTransition pageName="About">
       <div className={styles.page}>
@@ -152,7 +158,7 @@ const AboutPage = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            {certificatesData.map((cert) => (
+            {certificatesToShow.map((cert) => (
               <motion.div
                 key={cert.id}
                 className={styles.certificateCard}
@@ -188,6 +194,24 @@ const AboutPage = () => {
                 </div>
               </motion.div>
             ))}
+
+            {certificatesData.length > 8 && (
+              <motion.div
+                className={`${styles.certificateCard} ${styles.showMoreCard}`}
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.2 }}
+                onClick={() => setShowAllCertificates(!showAllCertificates)}
+              >
+                <div className={styles.showMoreContent}>
+                  <h3>{showAllCertificates ? "Show Less" : "Show More"}</h3>
+                  <p>
+                    {!showAllCertificates
+                      ? `${certificatesData.length - 8} more certificates`
+                      : "Display less certificates"}
+                  </p>
+                </div>
+              </motion.div>
+            )}
           </motion.div>
         </motion.section>
       </div>
