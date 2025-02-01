@@ -23,15 +23,20 @@ import {
   SiSocketdotio,
   SiJest,
   SiSupabase,
+  SiGithubactions,
+  SiDocker,
+  SiJsonwebtokens,
 } from "react-icons/si";
 import { FaReact, FaNodeJs, FaGitAlt, FaHtml5, FaGithub } from "react-icons/fa";
 import { RiNextjsLine } from "react-icons/ri";
 import { TbApi, TbBrandGoogleMaps } from "react-icons/tb";
+import { FaGolang } from "react-icons/fa6";
 
 export const skillsData = {
   languages: [
     { name: "JavaScript", icon: IoLogoJavascript },
     { name: "TypeScript", icon: SiTypescript },
+    { name: "Go", icon: FaGolang },
     { name: "HTML", icon: FaHtml5 },
     { name: "CSS", icon: SiCss3 },
   ],
@@ -49,6 +54,9 @@ export const skillsData = {
     { name: "GraphQL", icon: SiGraphql },
     { name: "Apollo", icon: SiApollographql },
     { name: "REST API", icon: TbApi },
+    { name: "JWT", icon: SiJsonwebtokens },
+    { name: "Gin", icon: FaGolang },
+    { name: "GORM", icon: FaGolang },
   ],
   database: [
     { name: "MongoDB", icon: SiMongodb },
@@ -77,5 +85,9 @@ export const skillsData = {
     { name: "Expo", icon: SiExpo },
     { name: "Socket.io", icon: SiSocketdotio },
     { name: "Jest", icon: SiJest },
+  ],
+  devops: [
+    { name: "Docker", icon: SiDocker },
+    { name: "GitHub Actions", icon: SiGithubactions },
   ],
 };

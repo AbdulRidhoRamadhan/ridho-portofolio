@@ -20,18 +20,47 @@ import {
   SiAxios,
   SiGoogle,
   SiGooglegemini,
+  SiGithubactions,
+  SiDocker,
+  SiCloudinary,
 } from "react-icons/si";
 import { TbBrandGoogleMaps } from "react-icons/tb";
 import { RiNextjsLine } from "react-icons/ri";
+import { FaGolang } from "react-icons/fa6";
 export const ProjectsData = [
   {
     id: 1,
+    title: "TerraFurni",
+    desc: "CMS Furniture Store",
+    cat: "Web Development",
+    role: "Full Stack Developer",
+    date: "2025",
+    position: "top",
+    img: "/images/TerraFurni-Cover.png",
+    modal: "/images/TerraFurni-Modal.png",
+    url: "https://terrafurni-admin.web.app",
+    github: "https://github.com/AbdulRidhoRamadhan/cms-go-server",
+    studycase: `TerraFurni is a comprehensive web application for managing furniture inventory, built with React and Golang with gin. The system consists of two main interfaces: an admin dashboard for inventory management and a public catalog view. The backend of TerraFurni database using PostgreSQL and GORM.  It  also  integrates  Cloudinary  for  media  management,  Docker  for  containerization,  and GitHub Actions for CI/CD automation. Built with a powerful tech stack including React, Chart.js, React Router, Lodash, Axios, TailwindCSS, Golang, Gin, PostgreSQL, GORM, JWT, Cloudinary, Docker, GitHub Actions, AWS, and Firebase. For more details and admin login credentials, check my GitHub repository.`,
+    tech: [
+      <FaReact />,
+      <SiTailwindcss />,
+      <SiAxios />,
+      <FaGolang />,
+      <SiPostgresql />,
+      <SiCloudinary />,
+      <SiDocker />,
+      <SiGithubactions />,
+      <SiAmazonaws />,
+      <SiFirebase />,
+    ],
+  },
+  {
+    id: 2,
     title: "Karsaku",
     desc: "Mobile App for Daily Recommendation",
     cat: "Mobile Development",
     role: "Full Stack Developer",
     date: "2024",
-    position: "top",
     img: "/images/Karsaku-Cover.png",
     modal: "/images/Karsaku-Modal.png",
     url: "https://expo.dev/preview/update?message=Merge%20branch%20'development'&updateRuntimeVersion=1.0.0&createdAt=2024-12-12T01%3A13%3A56.063Z&slug=exp&projectId=05079de3-cb8a-4c0a-80fb-7c06da78b633&group=42a3c95f-86f0-47f4-a2a1-5e2ddee4d706",
@@ -51,7 +80,7 @@ export const ProjectsData = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     title: "Defeateds",
     desc: "E-commerce Fashion Store",
     cat: "Web Development",
@@ -72,7 +101,7 @@ export const ProjectsData = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     title: "CloneBook",
     desc: "Mobile App Social Media",
     cat: "Mobile Development",
@@ -95,7 +124,7 @@ export const ProjectsData = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     title: "BrandBrain",
     desc: "Real-time Brand Guessing Game",
     cat: "Web Development",
@@ -119,7 +148,7 @@ export const ProjectsData = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     title: "GoodGames",
     desc: "Blog For Games",
     cat: "Web Development",

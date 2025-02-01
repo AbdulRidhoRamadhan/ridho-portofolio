@@ -8,7 +8,7 @@ import Image from "next/image";
 const slider1 = [
   {
     color: "#e3e5e7",
-    src: "BrandBrain.png",
+    src: "GoodGames.png",
   },
   {
     color: "#d6d7dc",
@@ -16,7 +16,7 @@ const slider1 = [
   },
   {
     color: "#e3e3e3",
-    src: "GoodGames.png",
+    src: "TerraFurni.png",
   },
   {
     color: "#21242b",
@@ -27,11 +27,11 @@ const slider1 = [
 const slider2 = [
   {
     color: "#d4e3ec",
-    src: "BrandBrain-2.png",
+    src: "BrandBrain.png",
   },
   {
     color: "#e5e0e1",
-    src: "GoodGames-2.png",
+    src: "TerraFurni-2.png",
   },
   {
     color: "#d7d4cf",
